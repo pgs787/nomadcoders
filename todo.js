@@ -42,7 +42,7 @@ function paintTodo(text) {
     toDos.push(toDoObj);
     saveToDos();
   } else {
-    swal("gg", "gg", "error");
+    swal("Error", "텍스트가 빈칸입니다!", "warning");
   }
 }
 
