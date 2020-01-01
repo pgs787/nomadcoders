@@ -68,6 +68,8 @@ body {
   border: 0;
   border-bottom: 2px solid #fff;
   transition: border-color 0.2s ease;
+  text-align: center;
+  font-size: 1.3rem;
 }
 .js-todoForm input {
   width: 70%;
