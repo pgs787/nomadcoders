@@ -58,7 +58,7 @@ body {
 .js-todoList bnt {
   cursor: pointer;
 }
-.js-form,
+.js-form input,
 .js-todoForm input {
   font-weight: 500;
   outline: 0;
