@@ -72,8 +72,9 @@ body {
   font-size: 1.3rem;
 }
 .js-todoForm input {
-  width: 70%;
+  width: 60%;
 }
+
 .js-weather {
   position: absolute;
   top: 10px;

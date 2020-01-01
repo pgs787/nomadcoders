@@ -41,6 +41,8 @@ function paintTodo(text) {
     };
     toDos.push(toDoObj);
     saveToDos();
+  } else {
+    swal("gg", "gg", "error");
   }
 }
 
