@@ -23,6 +23,8 @@ function getWeather(lat, lon) {
           main = "🍃";
         } else if (main === "snow") {
           main = "❄";
+        } else if (main === "Haze") {
+          main = "🌫";
         }
       }
       const div = document.createElement("div");

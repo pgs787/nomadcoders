@@ -3,6 +3,16 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
+  animation: fadeIn 0.5s linear;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 body {
   margin: 0;
@@ -13,20 +23,11 @@ body {
   background-color: rgb(184, 184, 184);
   text-align: center;
   color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  animation: fadeIn 0.5s linear;
 }
 
 .js-clock .currentTime {
@@ -40,13 +41,13 @@ body {
 .form,
 .greetings {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .showing {
   display: block;
-  margin: 0px auto 20px;
-  font-size: 3.8rem;
+  margin: 0px auto 40px;
+  font-size: 2.3rem;
 }
 .js-todoList {
   font-size: 1.3rem;
@@ -54,7 +55,7 @@ body {
   list-style: none;
   text-align: left;
 }
-.js-todoList bnt {
+.js-todoList button {
   cursor: pointer;
 }
 .js-form input,
@@ -83,6 +84,7 @@ body {
 .div1,
 .div2 {
   text-align: right;
+  vertical-align: top;
 }
 .div1 {
   font-size: 1.5rem;
