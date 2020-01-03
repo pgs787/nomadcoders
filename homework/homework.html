@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js-Study</title>
+</head>
+<body>
+    1 <button onclick=sayHi()>버튼1</button><br /><br />
+    2 <button onclick=currentTime()>버튼2</button><br /><br />
+    3 <input class="check" type="text" placeholder="파일명을 입력해 주세요" onkeydown="checkFileEnter()" >  <button class="check_btn" onclick="checkFile()">체크</button> <br /><br />
+    4 <button onclick="checkiden()">4번</button> <br /><br />
+    5 <input class="grade" maxlength="3" type="number" oninput='numberMaxLength(this)' placeholder="점수를 입력해 주세요" onkeydown="checkgradeEnter()"> <button onclick="checkgrade()">체크</button> <br /><br />
+    6 <br/>
+    <script>
+    for(var k=0;k<2;k++){
+        for (var j = 1; j < 6; j++) {
+            for (var i=0;i<j;i++){ 
+                document.write("*");
+            }
+        document.write("<br/>")
+        }
+    }
+    </script>
+    <br />
+    7 
+    <br />
+    <script>
+    for(var i=0;i<5;i++){
+        document.write("### <br/>");
+        document.write("%%% <br/>");
+    }
+    document.write("###");
+    </script>
+    <br/>
+    <br />
+    8 
+    <br/>
+    <script>
+    for (var k = 0; k < 2; k++) {
+        for (var j = 0; j < 5; j++) {
+            for (var i = 5; i > j; i--) {
+                document.write("*");
+            }
+            document.write("<br/>")
+        }
+    }
+    </script>
+    <br />
+    9 
+    <br/>
+    <button class="red" onclick="document.body.style.backgroundColor='red'">background:red</button><br/>
+    <button class="blue" onclick="document.body.style.backgroundColor='blue'">background:blue</button>
+    <br /><br />
+    10 
+    <br/>
+    <button onclick="location.href='http://www.naver.com'">naver</button><br />
+    <button  onclick="location.href='http://www.daum.net'">daum</button>
+    <br /><br />
+    11 
+    <br />
+    첫 번째 핸드폰번호를 입력하세요 : <input type="text" class="num1" oninput="phonenumberMaxLength(this)" maxlength="13" placeholder="ex)000-6666-8888" onkeydown="checkphoneEnter()" oninput="phonenumberMaxLength(this)" > <br/>
+    두 번째 핸드폰번호를 입력하세요 : <input type="text" class="num2" oninput="phonenumberMaxLength(this)" maxlength="13" placeholder="ex)000-6666-8888" onkeydown="checkphoneEnter()" oninput="phonenumberMaxLength(this)"> <br />
+    세 번째 핸드폰번호를 입력하세요 : <input type="text" class="num3" oninput="phonenumberMaxLength(this)" maxlength="13" placeholder="ex)000-6666-8888" onkeydown="checkphoneEnter()" oninput="phonenumberMaxLength(this)"> <br />
+    
+    <br /><br />
+    12 
+    <br />
+    숫자 2개를 입력하세요 : <input class="multi" type="text" placeholder="ex) 8,9" onkeydown="multipleEnter()"/>
+    <br />
+    13 
+    <br />
+    <input type="radio" value="1" onclick="alert(value)">남자</input><br/>
+    <input type="radio" value="2" onclick="alert(value)">여자</input>
+    <br /><br />
+    14
+    <br />
+    <form class="form1" name="form1">
+        <input type="checkbox"  name="hobby" value="운동"/>운동
+        <input type="checkbox"   name="hobby" value="독서"/>독서
+        <input type="checkbox"  name="hobby"  value="영화감상"/>영화감상
+        <input type="submit"  class="sub" onclick="check()"/>
+    </form>
+    <br /><br />
+    15 
+    <h1 style="margin:0px "></h1>
+    <h2 style="margin: 0px;"></h2>
+    <br /><br />
+<script src="homework.js"></script>
+</body>
+</html>

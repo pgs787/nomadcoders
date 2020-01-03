@@ -21,7 +21,7 @@ function getWeather(lat, lon) {
           main = "☔";
         } else if (main === "wind") {
           main = "🍃";
-        } else if (main === "snow") {
+        } else if (main === "Mist") {
           main = "❄";
         } else if (main === "Haze") {
           main = "🌫";
